@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <title>Result - RECASEA</title>
+</head>
+<body>
+  <div class="Banner">
+  </div>
+  <div class="ResultPage">
+    <h2 >Result</h2>
+    <div class="result-section">
+      <h3>Predicted Global Active Power:</h3>
+      <p>{{ predicted_power }}</p>
+    </div>
+    <div class="result-section">
+      <h3>Power Status:</h3>
+      <p>{{ power_status }}</p>
+    </div>
+    <div class="result-section">
+      <h3>Normal Power:</h3>
+      <p>{{ normal_power }}</p>
+    </div>
+    <div class="result-section">
+<!--      <h3>Energy Usage Distribution of Different Appliances:</h3>-->
+      <img src="{{ plot_path }}" alt="Appliance Usage Distribution">
+    </div>
+  </div>
+</body>
+</html>

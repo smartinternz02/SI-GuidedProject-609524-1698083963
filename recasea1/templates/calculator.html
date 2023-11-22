@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adjust the path to the stylesheet if needed -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <title>Calculator - RECASEA</title>
+</head>
+<body>
+  <div class="Banner">
+    <!-- Include your banner content here -->
+  </div>
+  
+  <div class="CalculatorPage">
+    <h2>Energy Consumption Calculator</h2>
+    <form id="calculatorForm" action="/calculate" method="POST">
+      <div class="InputRow">
+        <label>Global Reactive Power (kW):</label>
+        <input type="number" step="0.001" name="globalReactivePower" required />
+      </div>
+
+      <div class="InputRow">
+        <label>Voltage (V):</label>
+        <input type="number" step="0.01" name="voltage" required />
+      </div>
+
+      <div class="InputRow">
+        <label>Global Intensity (A):</label>
+        <input type="number" step="0.001" name="globalIntensity" required />
+      </div>
+
+      <div class="InputRow">
+        <label>Kitchen Appliances Energy Sub-metering (W-hr):</label>
+        <input type="number" name="kitchenEnergy" required />
+      </div>
+
+      <div class="InputRow">
+        <label>Laundry Room Appliances Energy Sub-metering (W-hr):</label>
+        <input type="number" name="laundryEnergy" required />
+      </div>
+
+      <div class="InputRow">
+        <label>Heating & Cooling Appliances Energy Sub-metering (W-hr):</label>
+        <input type="number" name="heatingCoolingEnergy" required />
+      </div>
+
+      <div class="InputRow">
+        <label>Time of Day:</label>
+        <select name="timeOfDay" required>
+          <option value="0">0 (Afternoon)</option>
+          <option value="1">1 (Evening)</option>
+          <option value="2">2 (Night)</option>
+          <option value="3">3 (Morning)</option>
+        </select>
+      </div>
+
+      <div class="InputRow">
+        <label>Weekday (0) or Weekend (1):</label>
+        <input type="number" name="weekdayOrWeekend" required />
+      </div>
+
+      <div class="InputRow">
+        <label>Other Appliances Energy Consumption (W-hr):</label>
+        <input type="number" step="0.01" name="otherAppliancesEnergy" required />
+      </div>
+      <div class="button33">
+      <button type="submit" class="gotoresult">Predict</button>
+      </div> 
+    </form>
+  </div>
+
+</body>
+</html>

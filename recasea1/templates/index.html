@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <title>RECASEA - Reliable Energy Consumption Analysis System</title>
+</head>
+<body>
+  <div class="Banner">
+    
+  </div>
+  <div class="Content">
+    <h1>RECASEA</h1>
+    <h2>Reliable Energy Consumption Analysis System for Energy Efficient Appliances</h2>
+    
+    <p>Power consumption analysis for households is an ML project that involves using machine learning algorithms to analyse and predict the energy consumption patterns of residential buildings. The goal of this project is to help homeowners and utility companies better manage their energy usage, reduce waste, and lower costs.
+        The project involves collecting data on energy consumption and related factors such as weather, time of day, and occupancy. This data is then used to train machine learning models to make accurate predictions of future energy consumption based on these factors. The models can be used to identify patterns in energy usage and make recommendations for ways to reduce energy waste and improve efficiency.
+        Overall, power consumption analysis for households is an important application of machine learning that has the potential to make a significant impact on energy usage and sustainability.</p>
+    
+    <div class="TeamMembers">
+      <h3>Team Members</h3>
+      <ul>
+        <li>Rishit Pradeep</li>
+        <li>Krishna Chaitanya</li>
+        <li>Pragyan Sharma</li>
+        <li>Krish Rajiv Nair</li>
+      </ul>
+    </div>
+    <div class="GoToCalculator">
+      <a href="{{ url_for('calculator') }}"><button class="gotoresult">Go to Calculator</button></a>
+    </div>
+  </div>
+</body>
+</html>

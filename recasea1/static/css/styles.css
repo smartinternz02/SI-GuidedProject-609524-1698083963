@@ -1,0 +1,84 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .Banner {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    background-image: url("./banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .CalculatorPage{
+    text-align: center;
+    padding: 20px;
+  }
+  .button33{
+    padding: 30px;
+  }
+  .Content {
+    text-align: center;
+    padding: 20px;
+  }
+  .gotoresult{
+    
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+p{
+  font-size: x-large;
+}
+
+.gotoresult:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+  
+  h1 {
+    font-family: 'Blockhead', sans-serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .TeamMembers {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .GoToCalculator {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .ResultPage {
+    text-align: center;
+  }
+  h2 {
+    font-size: 2em; /* You can adjust the font size as needed */
+  }  
+
+  .InputRow{
+    padding: 5px;
+  }
